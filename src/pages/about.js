@@ -3,10 +3,10 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Welcome</h1>
+    <SEO title="About Us" />
+    <h1>About Us</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu urna et
       nunc varius ultricies a eget magna. Praesent id ligula sit amet augue
@@ -16,9 +16,12 @@ const IndexPage = () => (
       pulvinar malesuada sem. Vestibulum id dignissim turpis. Phasellus sit amet
       pharetra nibh. Nulla id dapibus tortor. Suspendisse mollis malesuada ex in
       finibus. Fusce justo diam, finibus sit amet ex ac, imperdiet porttitor
-      lorem.
+      lorem. Morbi volutpat tincidunt tortor vitae posuere. Aenean sodales arcu
+      tellus, facilisis luctus dolor sodales id. Nulla vel bibendum massa. Sed
+      ullamcorper, eros quis ornare volutpat, dui orci placerat leo, in maximus
+      lorem odio eu elit.
     </p>
   </Layout>
 )
 
-export default IndexPage
+export default AboutPage
