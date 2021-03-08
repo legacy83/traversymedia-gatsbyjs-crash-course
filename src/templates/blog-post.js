@@ -2,11 +2,15 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
 
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
 export default function Template({ data }) {
   const post = data.markdownRemark
 
   return (
-    <div>
+    <Layout>
+      <SEO title={post.frontmatter.title} />
       <Link to="/blog">Go Back</Link>
       <hr />
       <h1>{post.frontmatter.title}</h1>
@@ -14,7 +18,7 @@ export default function Template({ data }) {
         Posted by {post.frontmatter.author} on {post.frontmatter.date}
       </h4>
       <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-    </div>
+    </Layout>
   )
 }
 
